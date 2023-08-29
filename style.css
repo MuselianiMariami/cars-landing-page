@@ -1,0 +1,73 @@
+body{
+  margin: 0;
+}
+.container{
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  color: white;
+}
+.card img{
+  align-self: flex-start;
+}
+.card button{
+  border-radius: 30px;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  border: 1px solid white;
+}
+.card button:hover{
+  background-color: transparent;
+  color: white;
+}
+.card p{
+  flex: 1;
+}
+.sedans {
+  background-color: hsl(31, 77%, 52%);
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+.sedans button {
+  color: hsl(31, 77%, 52%);
+}
+.suvs {
+  background-color: hsl(184, 100%, 22%);
+}
+.suvs button {
+  color: hsl(184, 100%, 22%);
+}
+.luxury {
+  background-color: hsl(179, 100%, 13%);
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+.luxury button {
+  color: hsl(179, 100%, 13%);
+}
+@media (min-width: 600px) {
+  .container{
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      padding: 0;
+  }
+  .card{
+      max-width: 150px;
+  }
+  .sedans {
+      border-top-right-radius: 0;
+      border-bottom-left-radius: 5px;
+  }
+  .luxury {
+      border-bottom-left-radius: 0px;
+      border-top-right-radius: 5px;
+  }
+}
